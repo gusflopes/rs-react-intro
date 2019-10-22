@@ -1,4 +1,5 @@
 import React from 'react';
+import propTypes from 'prop-types';
 
 
 // Poderia usar  props.tech, mas usou tech apenas para desestruturar
@@ -13,5 +14,14 @@ function TechItem({ tech, onDelete }) {
     </li>
   );
 }
+
+TechItem.defaultProps = {
+  tech: 'Oculto',
+};
+
+TechItem.propTypes ={
+  tech: propTypes.string,
+  onDelete: propTypes.func.isRequired,
+};
 
 export default TechItem;
