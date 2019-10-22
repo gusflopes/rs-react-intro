@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
 
-import profile from './assets/profile.png';
+import TechList from './components/TechList';
 
 function App() {
   return (
     <>
     <h1>Hello Rocketseat!</h1>
-    <img width="250px" src={profile} />
+    <TechList />
     </>
     );
 
